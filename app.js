@@ -17,7 +17,7 @@ const ACC = {
 const I18N = {
   en: {
     title: "Training log", skip: "Skip to content", brand: "Training log",
-    nav_strength: "Strength", nav_acc: "Accessories", nav_volume: "Volume", nav_attendance: "Attendance", nav_length: "Session length",
+    nav_strength: "Strength", nav_acc: "Accessories", nav_volume: "Volume", nav_attendance: "Attendance", nav_length: "Session length", nav_pdf: "PDF report", pdf_link: "Open the PDF report (2 pages, with the statistics behind the charts)",
     h1: (n, kg, r) => `Heaviest ${n}: ${kg} kg for ${r}`,
     plates: (d, list) => `A 20 kg bar with ${list} on each side (${d}).`,
     lede: (a, n, s, h, tn) => `${a}: <b>${n}</b> sessions, <b>${s}</b> working sets, <b>${h}</b> hours, <b>${tn}</b> tonnes of volume load.`,
@@ -35,7 +35,7 @@ const I18N = {
   },
   hu: {
     title: "Edzésnapló", skip: "Ugrás a tartalomra", brand: "Edzésnapló",
-    nav_strength: "Erő", nav_acc: "Kiegészítők", nav_volume: "Volumen", nav_attendance: "Jelenlét", nav_length: "Edzés hossza",
+    nav_strength: "Erő", nav_acc: "Kiegészítők", nav_volume: "Volumen", nav_attendance: "Jelenlét", nav_length: "Edzés hossza", nav_pdf: "PDF-jelentés", pdf_link: "A PDF-jelentés megnyitása (2 oldal, a grafikonok mögötti statisztikákkal)",
     h1: (n, kg, r) => `Legnehezebb ${n}: ${kg} kg, ${r} ismétlés`,
     plates: (d, list) => `20 kg-os rúd, oldalanként ${list} (${d}).`,
     lede: (a, n, s, h, tn) => `${a}: <b>${n}</b> edzés, <b>${s}</b> munkasorozat, <b>${h}</b> óra, <b>${tn}</b> tonna terhelési volumen.`,

@@ -86,3 +86,4 @@ h1{margin:0;font-size:clamp(40px,9vw,128px);line-height:.94;letter-spacing:0;tex
 
 footer{margin-top:96px;padding-top:20px;padding-bottom:56px;border-top:1px solid var(--line);color:var(--fg2);font-size:13px}
 footer p{margin:0;max-width:80ch}
+footer .pdf{color:var(--fg);text-decoration:underline;text-underline-offset:3px;display:inline-block;padding:10px 0}
