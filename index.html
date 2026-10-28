@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Training log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="#top" data-i18n="brand">Training log</a>
+    <nav aria-label="Sections">
+      <a href="#strength" data-i18n="nav_strength">Strength</a>
+      <a href="#accessories" data-i18n="nav_acc">Accessories</a>
+      <a href="#volume" data-i18n="nav_volume">Volume</a>
+      <a href="#attendance" data-i18n="nav_attendance">Attendance</a>
+      <a href="#length" data-i18n="nav_length">Session length</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language" id="lang">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="hu" aria-pressed="false">HU</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section class="hero" id="top">
+    <h1 id="h1"></h1>
+    <div class="tabs" role="group" aria-label="Lift" id="bellTabs"></div>
+    <svg class="bell" id="bell" viewBox="0 0 1200 300" role="img" preserveAspectRatio="xMidYMid meet"></svg>
+    <p class="plates" id="plates"></p>
+    <p class="lede" id="lede"></p>
+  </section>
+
+  <section class="entry" id="strength">
+    <div class="head"><h2 data-i18n="s_title">Strength</h2><p data-i18n="s_sub"></p></div>
+    <div class="body">
+      <div class="tabs" role="group" aria-label="Lift" id="liftTabs"></div>
+      <p class="finding" id="finding"></p>
+      <div class="chart" id="cStrength" role="img" aria-labelledby="finding"></div>
+      <p class="note" id="sNote"></p>
+    </div>
+  </section>
+
+  <section class="entry" id="accessories">
+    <div class="head"><h2 data-i18n="x_title">Accessories</h2><p data-i18n="x_sub"></p></div>
+    <div class="body" id="acc"></div>
+  </section>
+
+  <section class="entry" id="volume">
+    <div class="head"><h2 data-i18n="v_title">Volume</h2><p data-i18n="v_sub"></p></div>
+    <div class="body">
+      <div class="legend" id="legend"></div>
+      <div class="chart" id="cVolume" role="img" aria-label="Weekly volume"></div>
+    </div>
+  </section>
+
+  <section class="entry" id="attendance">
+    <div class="head"><h2 data-i18n="a_title">Attendance</h2><p id="aSub"></p></div>
+    <div class="body">
+      <div class="chart scroll" id="cCal" role="img" aria-label="Training calendar"></div>
+    </div>
+  </section>
+
+  <section class="entry" id="length">
+    <div class="head"><h2 data-i18n="d_title">Session length</h2><p data-i18n="d_sub"></p></div>
+    <div class="body"><div class="chart" id="cDur" role="img" aria-label="Session duration"></div></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p data-i18n="foot"></p>
+</footer>
+
+<div class="tip" id="tip" role="status" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
